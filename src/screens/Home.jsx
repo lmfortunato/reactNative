@@ -25,9 +25,20 @@ const Home = ({navigation}) => { //props obj, tiene el navigation
             onPress={() => navigation.navigate("ColorScreen")} //Lo matcheo con la key de createStackNavigator
             title="Go to Color Screen"
             />
+
             <Button
             onPress={() => navigation.navigate("ColorGenerator")} //Lo matcheo con la key de createStackNavigator
             title="Go to Color Generator"
+            />
+
+            <Button
+            onPress={() => navigation.navigate("TextScreen")} //Lo matcheo con la key de createStackNavigator
+            title="Go to Text Screen"
+            />
+
+            <Button
+            onPress={() => navigation.navigate("BoxScreen")} //Lo matcheo con la key de createStackNavigator
+            title="Go to Box Screen"
             />
             
             <TouchableOpacity onPress={() => navigation.navigate("ListScreen")}>

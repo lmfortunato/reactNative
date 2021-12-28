@@ -8,6 +8,8 @@ import ImageScreen from './src/screens/ImageScreen';
 import Counter from './src/screens/Counter';
 import ColorScreen from './src/screens/ColorScreen';
 import ColorGenerator from './src/screens/ColorGenerator';
+import TextScreen from './src/screens/TextScreen';
+import BoxScreen from './src/screens/BoxScreen';
 
 
 const navigator = createStackNavigator(
@@ -17,12 +19,14 @@ const navigator = createStackNavigator(
     ImageScreen: ImageScreen,
     Counter: Counter,
     ColorScreen: ColorScreen,
-    ColorGenerator: ColorGenerator
+    ColorGenerator: ColorGenerator,
+    TextScreen: TextScreen,
+    BoxScreen: BoxScreen
   },
   {
     initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "App"
+      title: "React Native App"
     }
   }
 )
